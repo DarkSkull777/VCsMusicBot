@@ -1,105 +1,104 @@
 import os
 from VCsMusicBot.config import SOURCE_CODE,ASSISTANT_NAME,PROJECT_NAME,SUPPORT_GROUP,UPDATES_CHANNEL
 class Messages():
-      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 I am an advanced bot created for playing music in the voice chats of Telegram Groups & Channels.\n\n✅ Hits /help for more info."
+      START_MSG = "**Hello 👋 [{}](tg://user?id={})!**\n\n🤖 Aku adalah bot canggih yang dibuat oleh @xskull7 untuk memutar musik di obrolan suara Grup & Saluran Telegram.\n\n✅ ketik /help atau info lebih lanjut."
       HELP_MSG = [
         ".",
 f"""
-**Hello, Welcome to {PROJECT_NAME}
+**Hello, Selamat Datang di {PROJECT_NAME}
 
-⭕ I can play music in your group's voice chat as well as channel voice chats.
+⭕ Aku dapat memutar musik di obrolan suara grup Anda serta obrolan suara saluran.
 
-⭕ Assistant: @{ASSISTANT_NAME}\n\nClick Next ➡️ for instructions.**
+⭕ Assistant: @{ASSISTANT_NAME}\n\nKlik Next ➡️ Untuk Interuksi lebih lanjut.**
 """,
 
 f"""
-**Setting up**
+**Pengaturan**
 
-1) Make bot admin (Group and in channel if use cplay)
-2) Start a voice chat
-3) Try /play <song name> for the first time by an admin
- If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry.
+1) Mulai obrolan suara
+2) Ketik /play <nama lagu> pertama kali oleh admin
+ Jika userbot bergabung nikmati musik, Jika tidak tambahkan @{ASSISTANT_NAME} ke grup kamu dan coba lagi
 
-**For Channel Music Play**
-1) Make me admin of your channel.
-2) Send /userbotjoinchannel in linked group.
-3) Now send commands in linked group.
+**Untuk Putar Di Channel**
+1) Jadikan aku admin channel kamu.
+2) Kirim /userbotjoinchannel dalam grup tertaut.
+3) Sekarang kirim perintah di grup tertaut.
 
-**Commands**
+**Perintah**
 
-**=>> Song Playing 🎧**
+**=>> Memutar Lagu 🎧**
 
-- /play <song name>: Select the Given Below Keyboard.
-- /play <yt url>: Play the given YouTube URL.
-- /ytplay: Directly play song via YouTube Music.
-- /dplay: Play song via deezer.
-- /splay: Play song via jio saavn.
+- /play <judul lagu>: Memutar lagu dengan judul.
+- /play <yt link>: Memutar dari link YouTube
+- /ytplay: Langsung memutar lagu melalui YouTube Music.
+- /dplay: Memutar lagu lewat deezer.
+- /splay: Memutar lagu lewat jio saavn.
 
-**=>> Playback ⏯**
+**=>> Pemutaran ⏯**
 
-- /player: Open Settings menu of player.
-- /skip: Skips the current track.
-- /pause: Pause track.
-- /resume: Resumes the paused track.
-- /end: Stops media playback.
-- /current: Shows the current Playing track.
-- /playlist: Shows playlist.
+- /player: Buka menu Pengaturan pemain.
+- /skip: Melewati trek saat ini.
+- /pause: Jeda trek.
+- /resume: Melanjutkan trek yang dijeda.
+- /end: Menghentikan pemutaran media.
+- /current: Menampilkan trek yang sedang diputar.
+- /playlist: Menampilkan daftar putar.
 
-**Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.**
+**Perintah yang hanya untuk admin grup -> /play, /current dan /playlist**
 """,
         
 f"""
-**=>> Channel Music Play 👨‍🎤**
+**=>> Putar Musik Channel 👨‍🎤**
 
-**⭕ For linked group admins only:**
+**⭕ Hanya untuk admin grup tertaut:**
 
-- /cplay <song name>: Play song you requested.
-- /cdplay <song name>: Play song you requested via deezer.
-- /csplay <song name>: Play song you requested via jio saavn.
-- /cplaylist: Show now playing list.
-- /cccurrent: Show now playing.
-- /cplayer: Open music player settings panel.
-- /cpause: Pause song play.
-- /cresume: Resume song play.
-- /cskip: Play next song.
-- /cend: Stop music play.
-- /userbotjoinchannel: Invite assistant to your chat.
+- /cplay <nama lagu>: Putar lagu yang Anda minta.
+- /cdplay <nama lagu>: Putar lagu yang Anda minta melalui deezer.
+- /csplay <nama lagu>: Putar lagu yang Anda minta melalui jio saavn.
+- /cplaylist: Tampilkan daftar yang sedang diputar.
+- /cccurrent: Tampilkan sedang diputar.
+- /cplayer: Buka panel pengaturan pemutar musik.
+- /cpause: Menjeda pemutaran lagu.
+- /cresume: Melanjutkan pemutaran lagu.
+- /cskip: Putar lagu berikutnya.
+- /cend: Menghentikan pemutaran musik.
+- /userbotjoinchannel: Undang asisten ke obrolan Anda.
 
-**Channel is also can be used instead of c** ( /cplay = /channelplay )
+**Channel juga dapat digunakan sebagai pengganti c** ( /cplay = /channelplay )
 
-**⭕ If you donlt like to play in linked group:**
+**⭕ jika Anda tidak suka bermain di grup tertaut:**
 
-1) Get your channel ID.
-2) Create a group with tittle: Channel Music: your_channel_id
-3) Add bot as Channel admin with full perms
-4) Add @{ASSISTANT_NAME} to the channel as an admin.
-5) Simply send commands in your group.
+1) Dapatkan ID channel Anda.
+2) Buat grup dengan judul: Channel Music: your_channel_id
+3) Tambahkan bot sebagai admin Channel dengan izin penuh
+4) Tambahkan @{ASSISTANT_NAME} ke Channel sebagai admin.
+5) Cukup kirim perintah di grup Anda.
 """,
 
 f"""
-**=>> More tools 😬**
+**=>> Lebih banyak alat 😬**
 
-- /musicplayer <on/off> : Enable/Disable Music player
-- /reload: Updates admin info of your group. Try if bot isn't recognize admin
-- /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
+- /musicplayer <on/off> : Aktifkan/Nonaktifkan Pemutar musik
+- /reload: Memperbarui info admin grup Anda. Coba jika bot tidak mengenali admin
+- /userbotjoin: Undang @{ASSISTANT_NAME} Userbot ke obrolan Anda
 """,
 f"""
-**=>> Song/Vid Download 📥**
-- /video [song mame]: Download video song from youtube
-- /song [song name]: Download audio song from youtube
-- /saavn [song name]: Download song from saavn
-- /deezer [song name]: Download song from deezer
+**=>> Unduh lagu/video 📥**
+- /video [song name]: Download video lagu dari youtube
+- /song [song name]: Unduh audio lagu dari youtube
+- /saavn [song name]: Download lagu dari saavn
+- /deezer [song name]: Download lagu dari deezer
 
-**=>> Search Tools 🔍**
-- /search [song name]: Search youtube for songs
-- /lyrics [song name]: Get song lyrics
+**=>> Alat pencari 🔍**
+- /search [song name]: Cari youtube untuk lagu
+- /lyrics [song name]: Dapatkan lirik lagu
 """,
 
 f"""
-**=>> Commands for Sudo Users 👮**
- - /userbotleaveall - remove assistant from all chats
- - /broadcast <reply to message> - globally brodcast replied message to all chats
- - /pmpermit [on/off] - enable/disable pmpermit message
-**Sudo Users can execute any command in any groups.**
+**=>> Perintah untuk Pengguna Sudo 👮**
+ - /userbotleaveall - hapus asisten dari semua obrolan
+ - /broadcast <reply to message> - siaran global membalas pesan ke semua obrolan
+ - /pmpermit [on/off] - aktifkan/nonaktifkan pesan pmpermit
+**Pengguna Sudo dapat menjalankan perintah apa pun di grup mana pun.**
 """
       ]
