@@ -17,14 +17,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                "ROOM CHAT | 2 Dimassrmdani\n
-━━━━━━━━━━━━━━━━━━━━\n
-AKU ADALAH ASISTEN MUSIK DARI @dimastapios_bot SILAKAN TAMBAHAN AKU KE GRUP KAMU SECARA MANUAL. DENGAN BEGITU KAMU BISA MENJALANKAN SAYA.\n
-┏━━━━━━━━━━━━━━━━━━━\n
-┣[• Owner~> 友 Dimasrmdani\n
-┣[• Cmd Me-> http://t.me/dimastapios_bot\n
-┣[• Website-> http://darkskull7.my.to\n
-┗━━━━━━━━━━━━━━━━━━━",
+                "ROOM CHAT | 2 Dimassrmdani\n━━━━━━━━━━━━━━━━━━━━\nAKU ADALAH ASISTEN MUSIK DARI @dimastapios_bot SILAKAN TAMBAHAN AKU KE GRUP KAMU SECARA MANUAL. DENGAN BEGITU KAMU BISA MENJALANKAN SAYA.\n┏━━━━━━━━━━━━━━━━━━━\n┣[• Owner~> 友 Dimasrmdani\n┣[• Cmd Me-> http://t.me/dimastapios_bot\n┣[• Website-> http://darkskull7.my.to\n┗━━━━━━━━━━━━━━━━━━━",
             )
             return
 
