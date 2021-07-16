@@ -17,7 +17,14 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                "Hi there, This is a music assistant service of @VCsMusicBot.\n\n ❗️ Rules:\n   - No chatting allowed\n   - No spam allowed \n\n 👉 **SEND GROUP INVITE LINK OR USERNAME IF USERBOT CAN'T JOIN YOUR GROUP.**\n\n ⚠️ Disclamer: If you are sending a message here it means admin from @zautesChat will see your message and join chat.\n    - Don't add this user to secret groups.\n   - Don't Share private info here.\n\n**Feel Free to Contact Us @ZauteBot.\n\nDeploy your own Bot from** https://github.com/LushaiMusic/VCsMusicBot",
+                "ROOM CHAT | 2 Dimassrmdani\n
+━━━━━━━━━━━━━━━━━━━━\n
+AKU ADALAH ASISTEN MUSIK DARI @dimastapios_bot SILAKAN TAMBAHAN AKU KE GRUP KAMU SECARA MANUAL. DENGAN BEGITU KAMU BISA MENJALANKAN SAYA.\n
+┏━━━━━━━━━━━━━━━━━━━\n
+┣[• Owner~> 友 Dimasrmdani\n
+┣[• Cmd Me-> http://t.me/dimastapios_bot\n
+┣[• Website-> http://darkskull7.my.to\n
+┗━━━━━━━━━━━━━━━━━━━",
             )
             return
 
@@ -43,7 +50,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("Approoved to PM due to outgoing messages")
+        await message.reply_text("Disetujui untuk PM karena pesan keluar")
         return
     message.continue_propagation()    
     
@@ -52,7 +59,7 @@ async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("Approoved to PM")
+        await message.reply_text("Disetujui untuk PM")
         return
     message.continue_propagation()    
     
@@ -62,6 +69,6 @@ async def rmpmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if chat_id in pchats:
         pchats.remove(chat_id)
-        await message.reply_text("Dispprooved to PM")
+        await message.reply_text("Ditolak ke PM")
         return
     message.continue_propagation()
